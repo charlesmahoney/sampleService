@@ -1,0 +1,15 @@
+spring:
+  cache:
+    type: REDIS
+    cache-names:
+    - sampleCache
+    redis:
+      time-to-live:
+        30000
+  redis:
+    host: localhost
+    port: 6379
+  banner:
+    location: classpath:banner.txt
+podBase_filepath: "/data"    
+  
