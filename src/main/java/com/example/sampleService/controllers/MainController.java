@@ -57,4 +57,11 @@ public class MainController {
 		return (template.getForEntity(uri, String.class)).getBody();
 		
 	}
+	
+	@RequestMapping(value="/lunch",method=RequestMethod.GET)
+	public String lunchNLearn() {
+		
+		return "Lunch-n-Learn";
+		
+	}
 }
