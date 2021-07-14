@@ -1,4 +1,5 @@
 {
   "message":"another NEW Capital letter A file",
-  "when": "test after SSL disable"
+  "when": "test after SSL disable",
+  "TEST": "another Test...this will work"
 }
