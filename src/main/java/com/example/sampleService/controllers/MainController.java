@@ -28,8 +28,16 @@ public class MainController {
 	@Value("${backendURL:localhost}")
 	String backUrl;
 	
+	@Value("${myproperty:notSet}")
+	String myproperty;
+	
 
 	private static final Logger LOGGER = Logger.getLogger(MainController.class.getName());
+	
+	@RequestMapping(value="myProperty")
+	public String getProperty(){
+		return myproperty	
+	}
 	
 	@RequestMapping(value="/**/",method=RequestMethod.GET)
 	public ResponseEntity<String> MainResponse(HttpServletRequest request){
