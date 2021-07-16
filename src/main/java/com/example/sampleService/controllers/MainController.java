@@ -36,7 +36,7 @@ public class MainController {
 	
 	@RequestMapping(value="myProperty")
 	public String getProperty(){
-		return myproperty	
+		return myproperty;	
 	}
 	
 	@RequestMapping(value="/**/",method=RequestMethod.GET)
