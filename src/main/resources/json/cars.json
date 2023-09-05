@@ -1,4 +1,4 @@
-cars: [
+[
     {
       id: "2",
       img: teslaModelS,
